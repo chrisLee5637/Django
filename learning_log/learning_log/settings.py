@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -55,7 +56,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'learning_log.urls'
 
 TEMPLATES = [
-    {
+	{
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
         'APP_DIRS': True,
@@ -68,6 +69,8 @@ TEMPLATES = [
             ],
         },
     },
+    
+	
 ]
 
 WSGI_APPLICATION = 'learning_log.wsgi.application'
